@@ -19,4 +19,5 @@
     <string name="priceTextView">Price:</string>
     <string name="roomTextView">Room:</string>
     <string name="capacityTextView">Capacity:</string>
+    <string name="incorrect_credentials">Incorrect credentials.</string>
 </resources>

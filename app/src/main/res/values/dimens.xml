@@ -15,4 +15,6 @@
     <dimen name="buttonRadius">15dp</dimen>
     <dimen name="underlinedButtonText">20sp</dimen>
     <dimen name="textBoxDescriptionHeight">120dp</dimen>
+    <dimen name="navBarHeight">70dp</dimen>
+    <dimen name="navBarIcon">40dp</dimen>
 </resources>

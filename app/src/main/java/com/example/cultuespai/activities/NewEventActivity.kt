@@ -21,7 +21,6 @@ class NewEventActivity : AppCompatActivity() {
 
         val rooms = arrayListOf("Sala 1", "Sala 2", "Sala 3")
 
-
         val dateTextbox = findViewById<EditText>(R.id.dateTextbox)
         val startTimeTextbox = findViewById<EditText>(R.id.startTimeTextbox)
         val endTimeTextbox = findViewById<EditText>(R.id.endTimeTextbox)

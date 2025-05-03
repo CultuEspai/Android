@@ -8,13 +8,13 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.cultuespai.R
 import com.example.cultuespai.activateNavBar
 
-class MainActivity : AppCompatActivity() {
+class TicketsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_tickets)
 
-        activateNavBar(this, this, 1)
+        activateNavBar(this, this, 2)
 
     }
 }
