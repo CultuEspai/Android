@@ -1,4 +1,4 @@
-package com.example.cultuespai
+package com.example.cultuespai.entities
 
 class Usuari(
     val usuariID: Int,

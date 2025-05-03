@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deepBlue"
+    tools:context=".activities.login.NewUserActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="@dimen/loginLogo"
+            android:layout_height="@dimen/loginLogo"
+            android:layout_marginBottom="@dimen/loginMargin"
+            android:background="@drawable/icon"
+            android:contentDescription="@string/logo"
+            />
+
+        <EditText
+            android:id="@+id/nameTextbox"
+            android:layout_width="@dimen/textBoxWidth"
+            android:layout_height="@dimen/textBoxHeight"
+            android:background="@drawable/textbox"
+            android:hint="@string/textBoxName"
+            android:paddingStart="@dimen/textBoxPadding"
+            android:paddingEnd="@dimen/textBoxPadding"
+            android:fontFamily="@font/lasiver_regular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textBoxText"
+            android:layout_margin="@dimen/textBoxMargin"
+            />
+
+        <EditText
+            android:id="@+id/emailTextbox"
+            android:layout_width="@dimen/textBoxWidth"
+            android:layout_height="@dimen/textBoxHeight"
+            android:background="@drawable/textbox"
+            android:hint="@string/email"
+            android:paddingStart="@dimen/textBoxPadding"
+            android:paddingEnd="@dimen/textBoxPadding"
+            android:fontFamily="@font/lasiver_regular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textBoxText"
+            android:layout_margin="@dimen/textBoxMargin"
+            />
+
+        <EditText
+            android:id="@+id/newPasswordTextbox"
+            android:layout_width="@dimen/textBoxWidth"
+            android:layout_height="@dimen/textBoxHeight"
+            android:background="@drawable/textbox"
+            android:hint="@string/password"
+            android:paddingStart="@dimen/textBoxPadding"
+            android:paddingEnd="@dimen/textBoxPadding"
+            android:inputType="textPassword"
+            android:fontFamily="@font/lasiver_regular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textBoxText"
+            android:layout_margin="@dimen/textBoxMargin"
+            />
+
+        <EditText
+            android:id="@+id/confirmPasswordTextbox"
+            android:layout_width="@dimen/textBoxWidth"
+            android:layout_height="@dimen/textBoxHeight"
+            android:background="@drawable/textbox"
+            android:hint="@string/confirmPassword"
+            android:paddingStart="@dimen/textBoxPadding"
+            android:paddingEnd="@dimen/textBoxPadding"
+            android:inputType="textPassword"
+            android:fontFamily="@font/lasiver_regular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textBoxText"
+            android:layout_margin="@dimen/textBoxMargin"
+            />
+
+        <Button
+            android:id="@+id/continueButton"
+            android:background="@drawable/button"
+            android:layout_width="@dimen/buttonWidth"
+            android:layout_height="@dimen/buttonHeight"
+            android:layout_marginTop="@dimen/loginMargin"
+            android:text="@string/create"
+            android:fontFamily="@font/lasiver_medium"
+            android:textColor="@color/black"
+            android:textSize="@dimen/buttonText"
+            />
+
+        <TextView
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/underlinedButtonText"
+            android:layout_marginTop="@dimen/textBoxMargin"
+            android:fontFamily="@font/lasiver_regular"
+            android:textColor="@color/white"
+            android:text="@string/loginUnderlined"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

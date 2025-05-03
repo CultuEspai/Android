@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deepBlue"
+    tools:context=".activities.NewEventActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/icon"
+            android:contentDescription="@string/logo"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="@dimen/textBoxWidth"
+            android:layout_height="wrap_content"
+            android:text="@string/eventNameTextView"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lasiver_medium"
+            android:textSize="@dimen/textBoxText"/>
+
+        <EditText
+            android:id="@+id/nameTextbox"
+            android:layout_width="@dimen/textBoxWidth"
+            android:layout_height="@dimen/textBoxHeight"
+            android:background="@drawable/textbox"
+            android:inputType="text"
+            android:paddingStart="@dimen/textBoxPadding"
+            android:paddingEnd="@dimen/textBoxPadding"
+            android:fontFamily="@font/lasiver_regular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textBoxText"
+            android:layout_margin="@dimen/textBoxMargin"/>
+
+        <TextView
+            android:layout_width="@dimen/textBoxWidth"
+            android:layout_height="wrap_content"
+            android:text="@string/descriptionTextView"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lasiver_medium"
+            android:textSize="@dimen/textBoxText"/>
+
+        <EditText
+            android:id="@+id/descriptionTextbox"
+            android:layout_width="@dimen/textBoxWidth"
+            android:layout_height="@dimen/textBoxDescriptionHeight"
+            android:background="@drawable/textbox"
+            android:inputType="text"
+            android:paddingStart="@dimen/textBoxPadding"
+            android:paddingEnd="@dimen/textBoxPadding"
+            android:fontFamily="@font/lasiver_regular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textBoxText"
+            android:layout_margin="@dimen/textBoxMargin"/>
+
+        <TextView
+            android:layout_width="@dimen/textBoxWidth"
+            android:layout_height="wrap_content"
+            android:text="@string/dateTextView"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lasiver_medium"
+            android:textSize="@dimen/textBoxText"/>
+
+        <EditText
+            android:id="@+id/dateTextbox"
+            android:layout_width="@dimen/textBoxWidth"
+            android:layout_height="@dimen/textBoxHeight"
+            android:background="@drawable/textbox"
+            android:focusable="false"
+            android:inputType="none"
+            android:paddingStart="@dimen/textBoxPadding"
+            android:paddingEnd="@dimen/textBoxPadding"
+            android:fontFamily="@font/lasiver_regular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textBoxText"
+            android:layout_margin="@dimen/textBoxMargin"/>
+
+        <TextView
+            android:layout_width="@dimen/textBoxWidth"
+            android:layout_height="wrap_content"
+            android:text="@string/timeTextView"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lasiver_medium"
+            android:textSize="@dimen/textBoxText"/>
+
+        <LinearLayout
+            android:layout_width="@dimen/textBoxWidth"
+            android:layout_height="@dimen/textBoxHeight"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/textBoxMargin"
+            >
+            <EditText
+                android:id="@+id/startTimeTextbox"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/textbox"
+                android:focusable="false"
+                android:inputType="none"
+                android:hint="@string/start"
+                android:paddingStart="@dimen/textBoxPadding"
+                android:paddingEnd="@dimen/textBoxPadding"
+                android:fontFamily="@font/lasiver_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textBoxText"
+                android:layout_marginEnd="8dp"/>
+
+            <EditText
+                android:id="@+id/endTimeTextbox"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/textbox"
+                android:focusable="false"
+                android:inputType="none"
+                android:hint="@string/end"
+                android:paddingStart="@dimen/textBoxPadding"
+                android:paddingEnd="@dimen/textBoxPadding"
+                android:fontFamily="@font/lasiver_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textBoxText"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="@dimen/textBoxWidth"
+            android:layout_height="wrap_content"
+            android:text="@string/priceTextView"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lasiver_medium"
+            android:textSize="@dimen/textBoxText"/>
+
+        <EditText
+            android:id="@+id/priceTextbox"
+            android:layout_width="@dimen/textBoxWidth"
+            android:layout_height="@dimen/textBoxHeight"
+            android:background="@drawable/textbox"
+            android:inputType="number"
+            android:text="0"
+            android:paddingStart="@dimen/textBoxPadding"
+            android:paddingEnd="@dimen/textBoxPadding"
+            android:fontFamily="@font/lasiver_regular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textBoxText"
+            android:layout_margin="@dimen/textBoxMargin"/>
+
+        <TextView
+            android:layout_width="@dimen/textBoxWidth"
+            android:layout_height="wrap_content"
+            android:text="@string/roomTextView"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lasiver_medium"
+            android:textSize="@dimen/textBoxText"/>
+
+        <Spinner
+            android:id="@+id/roomSpinner"
+            android:layout_width="@dimen/textBoxWidth"
+            android:layout_height="@dimen/textBoxHeight"
+            android:spinnerMode="dropdown"
+            android:background="@drawable/textbox"
+            android:layout_margin="@dimen/textBoxMargin"/>
+
+        <TextView
+            android:layout_width="@dimen/textBoxWidth"
+            android:layout_height="wrap_content"
+            android:text="@string/capacityTextView"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lasiver_medium"
+            android:textSize="@dimen/textBoxText"/>
+
+        <EditText
+            android:id="@+id/capacityTextbox"
+            android:layout_width="@dimen/textBoxWidth"
+            android:layout_height="@dimen/textBoxHeight"
+            android:background="@drawable/textbox"
+            android:inputType="number"
+            android:hint="Max. 200"
+            android:paddingStart="@dimen/textBoxPadding"
+            android:paddingEnd="@dimen/textBoxPadding"
+            android:fontFamily="@font/lasiver_regular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textBoxText"
+            android:layout_margin="@dimen/textBoxMargin"/>
+
+        <Button
+            android:id="@+id/create"
+            android:layout_width="@dimen/buttonWidth"
+            android:layout_height="@dimen/buttonHeight"
+            android:background="@drawable/button"
+            android:textSize="@dimen/buttonText"
+            android:fontFamily="@font/lasiver_medium"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/textBoxMargin"
+            android:text="@string/create" />
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
