@@ -7,7 +7,19 @@
     android:layout_height="match_parent"
     tools:context=".activities.TicketsActivity">
 
+    <include layout="@layout/top_bar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ticketsRecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/navBarHeight"
+        android:layout_marginBottom="@dimen/navBarHeight"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="1dp" />
 
     <include layout="@layout/navigation_bar"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
