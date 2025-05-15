@@ -1,4 +1,4 @@
-package com.example.cultuespai
+package com.example.cultuespai.fragments
 
 import android.app.DatePickerDialog
 import android.app.Dialog

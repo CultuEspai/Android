@@ -9,12 +9,14 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import androidx.lifecycle.lifecycleScope
 import com.example.cultuespai.R
 import com.example.cultuespai.activities.MainActivity
 import com.example.cultuespai.data.UserData
 import com.example.cultuespai.entities.Usuari
+import com.example.cultuespai.utils.api.ApiRepository.getUsuariById
+import com.example.cultuespai.utils.api.ApiRepository.getUsuaris
+import kotlinx.coroutines.launch
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,7 +29,21 @@ class LoginActivity : AppCompatActivity() {
         val usernameTextbox = findViewById<EditText>(R.id.usernameTextbox)
         val passwordTextbox = findViewById<EditText>(R.id.passwordTextbox)
 
-        val userList = ArrayList<Usuari>()
+        var userList = ArrayList<Usuari>()
+
+
+        lifecycleScope.launch {
+            try {
+                val users = getUsuaris()
+                userList = users?.toMutableList() as ArrayList<Usuari>
+
+                val user = getUsuariById(5)
+                println(user)
+            }catch (e: Exception)
+            {
+                println("API Connexion Error")
+            }
+        }
 
         signUpButton.setOnClickListener {
             val intent = Intent(this, NewUserActivity::class.java)
@@ -54,10 +70,10 @@ class LoginActivity : AppCompatActivity() {
 //                UserData.userId = user.getId()
 //                UserData.userType = user.tipusUsuari
 //            }
-            if (userName == user.correu && password == user.contrasenya) {
+            if (userName == user.Correu && password == user.Contrasenya) {
                 userFound = true
-                UserData.userId = user.usuariID
-                UserData.userType = user.tipusUsuari
+                UserData.userId = user.UsuariID
+                UserData.userType = user.TipusUsuari
             }
         }
         return userFound

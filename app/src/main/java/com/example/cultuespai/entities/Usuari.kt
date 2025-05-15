@@ -1,12 +1,14 @@
 package com.example.cultuespai.entities
 
+import java.io.Serializable
+
 class Usuari(
-    var usuariID: Int,
-    var nom: String,
-    var correu: String,
-    var contrasenya: String,
-    var tipusUsuari: String,
-    var actiu: Boolean,
-    var contrasenyaHash: String
-) {
+    var UsuariID: Int,
+    var Nom: String,
+    var Correu: String,
+    var Contrasenya: String,
+    var TipusUsuari: String,
+    var Actiu: Boolean,
+    var ContrasenyaHash: String
+) : Serializable {
 }

@@ -1,5 +1,7 @@
 package com.example.cultuespai.entities
 
+import java.io.Serializable
+
 class Sala(
     val salaID: Int,
     val nom: String,
@@ -8,5 +10,5 @@ class Sala(
     val cadiresFixes: Boolean = false,
     val descripcio: String?,
     val butacaMax: String?
-) {
+) : Serializable {
 }

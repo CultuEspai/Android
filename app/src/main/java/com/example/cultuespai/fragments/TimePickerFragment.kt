@@ -1,4 +1,4 @@
-package com.example.cultuespai
+package com.example.cultuespai.fragments
 
 import android.app.Dialog
 import android.app.TimePickerDialog

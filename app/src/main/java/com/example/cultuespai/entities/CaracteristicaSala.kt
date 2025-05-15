@@ -1,5 +1,6 @@
 package com.example.cultuespai.entities
 
+import java.io.Serializable
 import java.util.Date
 
 class CaracteristicaSala(
@@ -8,5 +9,5 @@ class CaracteristicaSala(
     val caracteristicaNom: String,
     val caracteristicaValor: String,
     val dataModificacio: Date
-) {
+) : Serializable {
 }

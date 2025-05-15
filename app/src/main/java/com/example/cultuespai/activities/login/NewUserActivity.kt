@@ -27,9 +27,9 @@ class NewUserActivity : AppCompatActivity() {
 
         createButton.setOnClickListener {
             val usuari = Usuari(0, "", "", "", "", true, "")
-            usuari.nom = nameTextbox.text.toString()
-            usuari.correu = emailTextbox.text.toString()
-            usuari.contrasenya = passwordTextbox.text.toString()
+            usuari.Nom = nameTextbox.text.toString()
+            usuari.Correu = emailTextbox.text.toString()
+            usuari.Contrasenya = passwordTextbox.text.toString()
 //            usuari.contrasenyaHash = BCrypt.hashpw(passwordTextbox.text.toString(), BCrypt.gensalt())
 
             finish()

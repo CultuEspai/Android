@@ -3,10 +3,8 @@ package com.example.cultuespai.activities
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.cultuespai.R
-import com.example.cultuespai.activateNavBar
+import com.example.cultuespai.utils.activateNavBar
 
 class SettingsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

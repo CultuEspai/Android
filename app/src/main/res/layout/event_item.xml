@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="380dp"
+    android:layout_height="250dp"
+    android:background="@color/turquoise"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="15dp">
+
+    <ImageView
+        android:id="@+id/eventImage"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:background="@drawable/blue_rectangle_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" >
+
+        <TextView
+            android:id="@+id/eventName"
+            android:layout_width="270dp"
+            android:layout_height="30dp"
+            android:text="Candlelight Cercle - Sala 3"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lasiver_medium"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/eventDate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.333" />
+
+        <TextView
+            android:id="@+id/eventDate"
+            android:layout_width="270dp"
+            android:layout_height="30dp"
+            android:text="16 de Marzo - 18:00h"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lasiver_regular"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.053"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewCapacity"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="60dp"
+            android:background="@drawable/user_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/eventCapacity"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/lasiver_medium"
+            android:gravity="center"
+            android:text="1000"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageViewCapacity"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

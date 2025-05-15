@@ -20,4 +20,6 @@
     <string name="roomTextView">Room:</string>
     <string name="capacityTextView">Capacity:</string>
     <string name="incorrect_credentials">Incorrect credentials.</string>
+    <string name="event_image">Event image</string>
+    <string name="reserve">Reserve</string>
 </resources>

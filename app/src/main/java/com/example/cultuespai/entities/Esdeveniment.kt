@@ -1,5 +1,6 @@
 package com.example.cultuespai.entities
 
+import java.io.Serializable
 import java.util.Date
 
 class Esdeveniment(
@@ -15,5 +16,5 @@ class Esdeveniment(
     val dePagament: Boolean,
     val preu: Int?,
     val entradesDisp: Int
-) {
+) : Serializable {
 }
