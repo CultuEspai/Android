@@ -1,5 +1,6 @@
 package com.example.cultuespai.activities.login
 
+import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -8,6 +9,7 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.example.cultuespai.R
@@ -36,18 +38,22 @@ class LoginActivity : AppCompatActivity() {
             try {
                 val users = getUsuaris()
                 userList = users?.toMutableList() as ArrayList<Usuari>
-
-                val user = getUsuariById(5)
-                println(user)
             }catch (e: Exception)
             {
                 println("API Connexion Error")
             }
         }
 
+        val launcher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+                result ->
+            if (result.resultCode == Activity.RESULT_OK) {
+                finish()
+            }
+        }
+
         signUpButton.setOnClickListener {
             val intent = Intent(this, NewUserActivity::class.java)
-            startActivity(intent)
+            launcher.launch(intent)
         }
 
         loginButton.setOnClickListener {
@@ -58,7 +64,6 @@ class LoginActivity : AppCompatActivity() {
                 showIncorrectCredentialsMessage(this)
             }
         }
-
     }
 
     private fun verifyUser(userName : String, password : String, userList : ArrayList<Usuari>) : Boolean{

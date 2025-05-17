@@ -3,10 +3,10 @@ package com.example.cultuespai.entities
 import java.io.Serializable
 
 class Entrada(
-    val entradaID: Int,
-    val usuariID: Int,
-    val esdevenimentID: Int,
-    val quantitat: Int,
-    val numeroButaca: String? = null
+    val EntradaID: Int,
+    val UsuariID: Int,
+    val EsdevenimentID: Int,
+    val Quantitat: Int,
+    val NumeroButaca: String? = null
 ) : Serializable {
 }

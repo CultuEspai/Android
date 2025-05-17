@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CultuEspai</string>
+    <string name="reserve">Reserva</string>
+    <string name="date_format">d \'de\' MMMM yyyy - HH:mm\'h\'</string>
+    <string name="logo">Logo</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="textBoxName">Nombre</string>
+    <string name="email">Email</string>
+    <string name="confirmPassword">Confirmar contraseña</string>
+    <string name="create">Crear</string>
+    <string name="timeTextView">Hora:</string>
+    <string name="start">Inicio</string>
+    <string name="end">Fin</string>
+    <string name="priceTextView">Precio</string>
+    <string name="roomTextView">Sala:</string>
+    <string name="capacityTextView">Capacidad:</string>
+    <string name="username">Nombre de usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="signUp"><u>Regístrate</u></string>
+    <string name="loginUnderlined"><u>Iniciar sesión</u></string>
+    <string name="eventNameTextView">Nombre del evento:</string>
+    <string name="descriptionTextView">Descripción:</string>
+    <string name="dateTextView">Fecha:</string>
+    <string name="incorrect_credentials">Credenciales incorrectas.</string>
+    <string name="event_image">Imagen del evento</string>
+</resources>

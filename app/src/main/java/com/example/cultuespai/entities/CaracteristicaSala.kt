@@ -4,10 +4,10 @@ import java.io.Serializable
 import java.util.Date
 
 class CaracteristicaSala(
-    val caracteristicaID: Int,
-    val salaID: Int,
-    val caracteristicaNom: String,
-    val caracteristicaValor: String,
-    val dataModificacio: Date
+    val CaracteristicaID: Int,
+    val SalaID: Int,
+    val CaracteristicaNom: String,
+    val CaracteristicaValor: String,
+    val DataModificacio: Date
 ) : Serializable {
 }
