@@ -23,6 +23,12 @@ class EventsAdapter(
         private val eventCapacity: TextView = view.findViewById(R.id.eventCapacity)
 
         fun bind(event: Esdeveniment) {
+            when (event.SalaID) {
+                1 -> eventImage.setImageResource(R.drawable.sala1)
+                2 -> eventImage.setImageResource(R.drawable.sala2)
+                3 -> eventImage.setImageResource(R.drawable.sala3)
+            }
+
             eventName.text = event.Nom
 
             val currentLocale = itemView.context.resources.configuration.locales[0]

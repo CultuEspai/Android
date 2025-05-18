@@ -47,7 +47,12 @@ class EventActivity : AppCompatActivity() {
         val eventDescription = findViewById<TextView>(R.id.eventDescription)
         val reserveButton = findViewById<Button>(R.id.reserveButton)
 
-        //eventImage.setImageResource(R.drawable.tickets)
+        when(event.SalaID){
+            1 -> eventImage.setImageResource(R.drawable.sala1)
+            2 -> eventImage.setImageResource(R.drawable.sala2)
+            3 -> eventImage.setImageResource(R.drawable.sala3)
+        }
+
         eventName.text = event.Nom
 
         val currentLocale = this.resources.configuration.locales[0]
