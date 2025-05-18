@@ -9,15 +9,35 @@
 
     <include layout="@layout/top_bar"/>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/eventsRecyclerview"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="@dimen/navBarHeight"
-        android:layout_marginBottom="@dimen/navBarHeight"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="1dp" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginVertical="@dimen/navBarHeight">
+        <Button
+            android:id="@+id/newEventButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/buttonHeight"
+            android:layout_marginVertical="@dimen/textBoxMargin"
+            android:text="@string/new_event"
+            android:textSize="23sp"
+            android:fontFamily="@font/lasiver_medium"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:visibility="gone"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/eventsRecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="1dp" />
+    </LinearLayout>
+
+
 
     <include layout="@layout/navigation_bar"/>
 

@@ -38,6 +38,9 @@ interface ApiService {
     @GET("Entrades/user/{id}")
     suspend fun getEntradesByUser(@Path("id") userId: Int): Response<List<Entrada>>
 
+    @GET("Entrades/event/{id}")
+    suspend fun getEntradesByEvent(@Path("id") eventId: Int): Response<List<Entrada>>
+
     @POST("Entrades")
     suspend fun postEntrada(@Body entrada: Entrada): Response<Entrada>
 

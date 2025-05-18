@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.cultuespai.R
 import com.example.cultuespai.entities.Esdeveniment
+import com.example.cultuespai.entities.Sala
 import java.text.SimpleDateFormat
 
 class EventsAdapter(
@@ -49,4 +50,10 @@ class EventsAdapter(
     }
 
     override fun getItemCount() = events.size
+
+    fun updateData(newEvents: List<Esdeveniment>) {
+        this.events.clear()
+        this.events.addAll(newEvents)
+        notifyDataSetChanged()
+    }
 }

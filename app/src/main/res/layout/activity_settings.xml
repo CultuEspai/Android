@@ -5,11 +5,192 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/deepBlue"
     tools:context=".activities.SettingsActivity">
 
     <include layout="@layout/top_bar"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginVertical="@dimen/navBarHeight"
+        android:paddingHorizontal="20dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:text="@string/user_data"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lasiver_medium"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:layout_width="@dimen/textBoxWidth"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lasiver_medium"
+            android:textSize="@dimen/textBoxText"/>
+
+        <EditText
+            android:id="@+id/nameTextbox"
+            android:layout_width="@dimen/textBoxWidth"
+            android:layout_height="@dimen/textBoxHeight"
+            android:background="@drawable/textbox"
+            android:inputType="text"
+            android:paddingStart="@dimen/textBoxPadding"
+            android:paddingEnd="@dimen/textBoxPadding"
+            android:fontFamily="@font/lasiver_regular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textBoxText"
+            android:layout_marginVertical="@dimen/textBoxMargin"/>
+
+        <TextView
+            android:layout_width="@dimen/textBoxWidth"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lasiver_medium"
+            android:textSize="@dimen/textBoxText"/>
+
+        <EditText
+            android:id="@+id/emailTextbox"
+            android:layout_width="@dimen/textBoxWidth"
+            android:layout_height="@dimen/textBoxHeight"
+            android:background="@drawable/textbox"
+            android:inputType="textEmailAddress"
+            android:paddingStart="@dimen/textBoxPadding"
+            android:paddingEnd="@dimen/textBoxPadding"
+            android:fontFamily="@font/lasiver_regular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textBoxText"
+            android:layout_marginVertical="@dimen/textBoxMargin"/>
+        <TextView
+            android:layout_width="@dimen/textBoxWidth"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lasiver_medium"
+            android:textSize="@dimen/textBoxText"/>
+
+        <EditText
+            android:id="@+id/passwordTextbox"
+            android:layout_width="@dimen/textBoxWidth"
+            android:layout_height="@dimen/textBoxHeight"
+            android:background="@drawable/textbox"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/textBoxPadding"
+            android:paddingEnd="@dimen/textBoxPadding"
+            android:fontFamily="@font/lasiver_regular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textBoxText"
+            android:layout_marginVertical="@dimen/textBoxMargin"/>
+
+        <TextView
+            android:layout_width="@dimen/textBoxWidth"
+            android:layout_height="wrap_content"
+            android:text="@string/confirmPassword"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lasiver_medium"
+            android:textSize="@dimen/textBoxText"/>
+
+        <EditText
+            android:id="@+id/confirmPasswordTextbox"
+            android:layout_width="@dimen/textBoxWidth"
+            android:layout_height="@dimen/textBoxHeight"
+            android:background="@drawable/textbox"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/textBoxPadding"
+            android:paddingEnd="@dimen/textBoxPadding"
+            android:fontFamily="@font/lasiver_regular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textBoxText"
+            android:layout_marginVertical="@dimen/textBoxMargin"/>
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="@dimen/buttonWidth"
+            android:layout_height="@dimen/buttonHeight"
+            android:background="@drawable/button"
+            android:textSize="@dimen/buttonText"
+            android:fontFamily="@font/lasiver_medium"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/textBoxMargin"
+            android:text="@string/update" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:text="@string/language"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lasiver_medium"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="30sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+            <Button
+                android:id="@+id/ca"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/navBarHeight"
+                android:layout_weight="1"
+                android:text="@string/ca"
+                android:textSize="25sp"
+                android:fontFamily="@font/lasiver_medium"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="2"/>
+
+            <Button
+                android:id="@+id/es"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/navBarHeight"
+                android:layout_weight="1"
+                android:text="@string/es"
+                android:textSize="25sp"
+                android:fontFamily="@font/lasiver_medium"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="2"/>
+
+            <Button
+                android:id="@+id/en"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/navBarHeight"
+                android:layout_weight="1"
+                android:text="@string/en"
+                android:textSize="25sp"
+                android:fontFamily="@font/lasiver_medium"
+                android:backgroundTint="@color/turquoise"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/logOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:textSize="@dimen/buttonText"
+            android:fontFamily="@font/lasiver_medium"
+            android:textColor="@color/white"
+            android:layout_marginTop="50dp"
+            android:text="@string/logOut" />
+    </LinearLayout>
 
     <include layout="@layout/navigation_bar"/>
 

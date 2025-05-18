@@ -24,4 +24,24 @@
     <string name="dateTextView">Fecha:</string>
     <string name="incorrect_credentials">Credenciales incorrectas.</string>
     <string name="event_image">Imagen del evento</string>
+    <string name="reserved">Reservado</string>
+    <string name="number_of_tickets">Número de entradas:</string>
+    <string name="seat_number">Número de asiento:</string>
+    <string name="full">Completo</string>
+    <string name="back">Botón atrás</string>
+    <string name="new_event">Nuevo evento</string>
+    <string name="name_obligatory">El nombre del evento es obligatorio.</string>
+    <string name="description_obligatory">La descripción del evento es obligatoria.</string>
+    <string name="date_obligatory">Todos los campos de fecha y hora son obligatorios.</string>
+    <string name="valid_date">La hora de inicio debe ser anterior a la hora de fin.</string>
+    <string name="valid_capacity">La capacidad no puede ser mayor a la sala.</string>
+    <string name="update">Actualizar</string>
+    <string name="user_data">Datos del usuario:</string>
+    <string name="language">Idioma:</string>
+    <string name="es">ES</string>
+    <string name="ca">CA</string>
+    <string name="en">EN</string>
+    <string name="logOut">Cerrar sesión</string>
+    <string name="no_changes">No hay cambios</string>
+    <string name="user_data_updated">Usuario actualizado exitosamente.</string>
 </resources>

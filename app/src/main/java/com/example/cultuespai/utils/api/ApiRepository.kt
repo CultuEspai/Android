@@ -38,6 +38,10 @@ object ApiRepository {
         api.getEntradesByUser(userId).body()
     }
 
+    suspend fun getEntradesByEvent(eventId: Int): List<Entrada>? = withContext(Dispatchers.IO) {
+        api.getEntradesByEvent(eventId).body()
+    }
+
     suspend fun postEntrada(entrada: Entrada): Entrada? = withContext(Dispatchers.IO) {
         api.postEntrada(entrada).body()
     }

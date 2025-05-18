@@ -15,6 +15,6 @@ class Esdeveniment(
     val Estat: String,
     val DePagament: Boolean,
     val Preu: Int?,
-    val EntradesDisp: Int
+    var EntradesDisp: Int
 ) : Serializable {
 }

@@ -24,4 +24,24 @@
     <string name="dateTextView">Data:</string>
     <string name="incorrect_credentials">Credencials incorrectes.</string>
     <string name="event_image">Imatge de l\'esdeveniment</string>
+    <string name="reserved">Reservat</string>
+    <string name="number_of_tickets">Número d\'entrades:</string>
+    <string name="seat_number">Número de seient:</string>
+    <string name="full">Complet</string>
+    <string name="back">Botó Enrere</string>
+    <string name="new_event">Nou esdeveniment</string>
+    <string name="name_obligatory">El nom de l\'esdeveniment és obligatori.</string>
+    <string name="description_obligatory">La descripció de l\'esdeveniment és obligatòria.</string>
+    <string name="date_obligatory">Tots els camps de data i hora són obligatoris.</string>
+    <string name="valid_date">L\'hora inicial ha de ser anterior a l\'hora de fi.</string>
+    <string name="valid_capacity">La capacitat no pot ser més gran a la sala.</string>
+    <string name="update">Actualitzar</string>
+    <string name="user_data">Dades de l\'usuari:</string>
+    <string name="language">Idioma:</string>
+    <string name="es">ES</string>
+    <string name="ca">CA</string>
+    <string name="en">EN</string>
+    <string name="logOut">Tancar sessió</string>
+    <string name="no_changes">No hi ha canvis</string>
+    <string name="user_data_updated">Usuari actualitzat amb èxit.</string>
 </resources>

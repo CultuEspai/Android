@@ -43,6 +43,7 @@
             android:layout_height="@dimen/textBoxHeight"
             android:background="@drawable/textbox"
             android:hint="@string/email"
+            android:inputType="textEmailAddress"
             android:paddingStart="@dimen/textBoxPadding"
             android:paddingEnd="@dimen/textBoxPadding"
             android:fontFamily="@font/lasiver_regular"

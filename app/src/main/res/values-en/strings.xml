@@ -24,4 +24,24 @@
     <string name="event_image">Event image</string>
     <string name="reserve">Reserve</string>
     <string name="date_format">MMMM d, yyyy - h:mm a</string>
+    <string name="reserved">Reserved</string>
+    <string name="number_of_tickets">Number of tickets:</string>
+    <string name="seat_number">Seat number:</string>
+    <string name="full">Full</string>
+    <string name="back">Back button</string>
+    <string name="new_event">New event</string>
+    <string name="name_obligatory">The name of the event is obligatory.</string>
+    <string name="description_obligatory">The description of the event is obligatory.</string>
+    <string name="date_obligatory">All date and time fields are required.</string>
+    <string name="valid_date">The start time must be before the end time.</string>
+    <string name="valid_capacity">The capacity cannot be larger than the room.</string>
+    <string name="update">Update</string>
+    <string name="user_data">User data:</string>
+    <string name="language">Language:</string>
+    <string name="es">ES</string>
+    <string name="ca">CA</string>
+    <string name="en">EN</string>
+    <string name="logOut">Logout</string>
+    <string name="no_changes">No changes</string>
+    <string name="user_data_updated">User successfully updated.</string>
 </resources>
